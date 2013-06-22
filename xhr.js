@@ -7,7 +7,7 @@ var Xhr = function(){
             }
             var e = encodeURIComponent,result = '';
             for (var k in data) {
-                result = '&' + e(k) + '=' + e(data[k]);
+                result += '&' + e(k) + '=' + e(data[k]);
             }
             return result.substr(1);
         },
